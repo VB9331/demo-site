@@ -1,0 +1,104 @@
+main {
+	width: 100%;
+	background: url(../img/py_bj.jpg) center/100% no-repeat fixed;
+	position: relative;
+	display: flex;
+	font-family: "宋体";
+}
+main::before{
+	content: '';
+	display: block;
+	overflow: hidden;
+}
+main .container{
+	margin: 0;
+	padding-top: 80px;
+	width: 750px;
+}
+
+/* 两边装饰 */
+main .sticky{
+	position: sticky;
+}
+main .decorate_h2{
+	top: 15%;
+	left: 4%;
+	flex-basis: 350px;
+	height: 800px;
+}
+main .decorate{
+	top: 15%;
+	right: 0;
+	height: 908px;
+	flex-basis: 600px;
+	flex-grow: 1;
+}
+main .decorate img{
+	width: 60%;
+	margin-left: 150px;
+}
+
+/* 内容 */
+main h2{
+	--theme:#5c3f0a;
+	font-family: inherit;
+}
+main h2 span::before{
+	font-size: 140px;
+	color: #211704;
+	bottom: -20px;
+}
+section{
+	margin-bottom: 30px;
+}
+#history .text{
+	text-align: justify;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: bold;
+	color: #211704;
+	column-count: 2;
+	column-gap: 40px;
+	column-rule: 5px solid #c0b8a1;
+}
+#work .text{
+	width: 100%;
+}
+
+footer,#copyright{
+	background-color: transparent;
+	background: url(../img/py_bj.jpg) center/100% no-repeat fixed;
+	color: #555;
+}
+footer{
+	position: relative;
+	z-index: 2;
+	box-shadow: 0 -8px 10px 0 rgba(0,0,0,0.1);
+}
+footer h3{
+	color: #333;
+}
+
+#nav-s{
+	position: sticky;
+	left: 120px;
+	bottom: 150px;
+	z-index: 999;
+	width: 100px;
+	height: 136px;
+	background-color: rgba(150,150,150,0.2);
+	border-bottom: none;
+}
+#nav-s .container{
+	width: auto;
+	height: auto;
+	padding: 0;
+}
+#nav-s ul li a{
+	color: white;
+	width: 50px;
+	line-height: 1.5;
+	padding: 20px 10px;
+	text-align: center;
+	background-color: rgba(150,150,150,0.2);
+}

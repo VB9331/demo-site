@@ -1,0 +1,115 @@
+#nav-s .container{
+	width: 90%;
+}
+#nav-s p{
+	line-height: 50px;
+	margin-bottom: 0;
+	color: #888;
+	border-left: 10px solid var(--theme);
+	padding-left: 10px;
+}
+#nav-s a{
+	transition: color .3s;
+}
+#nav-s a:hover{
+	color: var(--theme);
+}
+main{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+	position: relative;
+}
+main section {
+	background-color: white;
+	width: 65%;
+}
+main h2 span::before{
+	opacity: 0.4;
+}
+main section .info{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+main section .info>*{
+	margin-left: 2em;
+}
+main section .container{
+	width: 100%;
+}
+main .text{
+	font-size: 18px;
+}
+main h3{
+	font-weight: normal;
+	margin-bottom: 15px;
+	font-size: 24px;
+	text-indent: 0;
+}
+main h4{
+	margin-bottom: 5px;
+	font-weight: normal;
+	font-size: 22px;
+	color: #555;
+}
+main aside{
+	position: sticky;
+	top: 0;
+	right: 0;
+	width: 30%;
+}
+main aside h2.title{
+	font-size: 40px;
+	color: var(--theme);
+	font-family: "幼圆";
+	margin-bottom: 30px;
+}
+main aside h2.title span{
+	background-color: var(--back);
+}
+main aside .item{
+	display: block;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+main aside .item:hover .title{
+	left: 0;
+	opacity: 1;
+}
+main aside .item:hover .title span{
+	transform: translate(0,0);
+}
+main aside .item .title{
+	position: absolute;
+	z-index: 2;
+	left: -100%;
+	bottom: 0px;
+	height: 80px;
+	line-height: 80px;
+	padding-left: 80px;
+	margin-bottom: 0;
+	width: 75%;
+	background-color: rgba(255,255,255,0.8);
+	backdrop-filter:blur(10px);
+	opacity: 0;
+	
+	transition: left .5s,opacity .5s;
+}
+main aside .item img{
+	width: 100%;
+	border-radius: 10px;
+}
+main aside .item .title span{
+	display: inline-block;
+	background-color: transparent;
+	color: var(--theme);
+	transform: translate(-200px,0);
+	transition: transform .5s .2s;
+}
+main aside .item .title::before{
+	width: 80px;
+}

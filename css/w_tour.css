@@ -1,0 +1,84 @@
+nav ul>li:hover>a, nav ul>li.active>a{
+	color: #ffdc9e;
+}
+#tour{
+	--theme:#6c8ec1;
+}
+#banner h2::before{
+	--theme:#6c8ec1;
+	bottom: -10px;
+	height: 70%;
+	background-color: var(--theme);
+}
+#nav-s ul li a:hover, #nav-s ul li.active a{
+	--theme:#6c8ec1;
+	background-color: var(--theme);
+}
+#tour h3{
+	font-size: 28px;
+	
+}
+#tour h4{
+	text-indent: 0;
+	color: #757575;
+	font-size: 20px;
+}
+#tour h2 span{
+	font-size: 60px;
+}
+#tour .container{
+	width: 90%;
+}
+#tour .item{
+	position: relative;
+	overflow: hidden;
+	
+	border-radius: 50px;
+}
+#tour .item:hover .content{
+	transform: translate(0,0);
+	opacity: 1;
+}
+#tour .item img{
+	width: 100%;
+	position: relative;
+	z-index: -10;
+	
+	transition: transform 0.5s;
+}
+#tour .item:hover img{
+	transform: scale(1.2);
+}
+#tour .item .content{
+	position: absolute;
+	z-index: -9;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255,255,255,1);
+	padding: 60px;
+	transform: translate(-100%,0);
+	opacity: 0;
+	width: 80%;
+	
+	transition: transform .5s,opacity .5s .1s;
+}
+#tour .item h3{
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+}
+#tour .item h3::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	width: 120%;
+	height: 50%;
+	background-color: #7fa5e2;
+	opacity: 0.6;
+}
+#tour .item h4{
+	margin-bottom: 20px;
+}

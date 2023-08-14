@@ -1,0 +1,53 @@
+@import url("w_more.css");
+@import url("w_student.css");
+@import url("w_tour.css");
+nav ul>li:hover>a, nav ul>li.active>a{
+	color: #ffdc9e;
+}
+main .container{
+	padding: 0!important;
+	width: 90%!important;
+}
+#nav-s ul li a:hover, #nav-s ul li.active a{
+	background-color: #e9c07e;
+	color: white;
+}
+section>h2 span::before{
+	opacity: 0.4;
+}
+.item{
+	display: block;
+}
+.column2{
+	column-count: 2;
+}
+#tour .item .content{
+	color: white;
+	font-size: 20px;
+}
+#tour .item:nth-child(1) .content{
+	background-color: rgba(60, 76, 127, 0.73);
+}
+#tour .item:nth-child(2) .content{
+	background-color: rgba(57, 55, 56, 0.77);
+}
+#tour .item .content h3{
+	color: white;
+}
+#tour .item h3::before{
+	background-color: white;
+	width: 100%;
+}
+
+#more .item .img_box{
+	height: 500px!important;
+	border-radius: 50px;
+	overflow: hidden;
+	position: relative;
+}
+#more .item .content{
+	border-radius: 50px;
+}
+#more .item:hover .content{
+	border-radius: 50px;
+}

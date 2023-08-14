@@ -1,0 +1,82 @@
+#student .container{
+	padding: 50px 0;
+	width: 90%;
+	column-count: 2;
+}
+#student .item{
+	position: relative;
+	margin-bottom: 20px;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 50px;
+}
+#student .item:hover img{
+	transform: scale(1.2);
+}
+#student .item .img_box{
+	height: 800px;
+	overflow: hidden;
+}
+#student .item img{
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+	transition: transform 2s;
+}
+#student .item .content{
+	pointer-events: none;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(150,150,150,0.2);
+	left: -85%;
+	bottom: -87.5%;
+	overflow: hidden;
+	
+	transition: width 0.4s,height 0.4s,background-color .5s;
+}
+#student .item:hover .content{
+	width: 170%;
+	height: 175%;
+	background-color: rgba(233,192,126,0.6);
+}
+#student .item .text{
+	text-indent: 0;
+	position: absolute;
+	right: 7%;
+	top: 15%;
+	width: 40%;
+	min-width: 500px;
+	min-height: 255px;
+	margin-bottom: 0;
+	font-size: 18px;
+	color: white;
+	
+}
+#student .item .text p{
+	min-width: 500px;
+}
+#student .item .title{
+	margin-bottom: 50px;
+}
+#student .item .title span{
+	padding: 0;
+	color: white;
+	background-color: transparent;
+	font-size: 60px;
+	transition: transform .3s .4s;
+}
+#student .item .title::before{
+	margin: 0;
+	bottom: -10px;
+	top: auto;
+	height: 5px;
+	background-color: white;
+	width: 50%;
+}
+#student .ti2{
+	text-indent: 2em;
+}
